@@ -1,0 +1,20 @@
+{
+  "name": "agri-product-e-store",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run portal\"",
+    "server": "cd server && nodemon index.js",
+    "portal": "cd portal && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2",
+    "mongoose-id-validator": "^0.6.0"
+  }
+}
